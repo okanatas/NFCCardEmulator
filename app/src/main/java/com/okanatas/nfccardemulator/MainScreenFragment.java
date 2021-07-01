@@ -129,7 +129,7 @@ public class MainScreenFragment extends Fragment {
         communicationLogsLinearLayout.removeAllViews();
         TextView textView = new TextView(getContext());
         textView.setText(InformationTransferManager.getCardCommunicationMessages());
-        textView.setTextSize(InformationTransferManager.getDimenResource(R.dimen.communication_log_text_size));
+        textView.setTextSize(14);
         communicationLogsLinearLayout.addView(textView);
         InformationTransferManager.cardCommunicationMessages.setLength(0);
     }
