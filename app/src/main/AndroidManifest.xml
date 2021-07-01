@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.okanatas.nfccardemulator">
+
+    <!--  declaration to use NFC  -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!--  access to write external storage   -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+
+    <!--  Requirement for the HCE hardware, the app only installs on phones that can run the HCE  -->
+    <uses-feature android:name="android.hardware.nfc.hce"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NFCCardEmulator">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.NFCCardEmulator.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--   declaration the HCE service
+
+      name          : name of the Class that will implement the Service callbacks
+      exported      : represents accessibility by other applications
+      permission    : the Service has to Bind to the NFC service in order to be able to use NFC
+
+      intent-filter : when the Android system detects that an external Card Reader is trying to read a card,
+                      it fires a `HOST_APDU_SERVICE` action, our service having registered to that action,
+                      will be called, and then we can do whatever we want once our service is called into action.
+
+      meta-data     : in order for the system to know which services to call based on which AID
+                      the reader is trying to communicate with, we need to declare the `meta-data` tag
+                      and point to an XML resource.
+
+      -->
+
+        <service
+            android:name=".HostCardEmulatorService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/apduservice" />
+        </service>
+
+    </application>
+
+</manifest>

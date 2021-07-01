@@ -1,0 +1,288 @@
+<resources>
+    <string name="app_name">NFC Card Emulator</string>
+    <string name="action_about">About</string>
+    <string name="action_help">Help</string>
+
+    <string name="service_description">HCE Service</string>
+    <string name="aid_description">Aid Description</string>
+
+    <!--  File Handler Class  -->
+    <string name="c_apdu_keyword">c-apdu</string>
+    <string name="r_apdu_keyword">r-apdu</string>
+
+    <string name="command_from_file_text">Command From File</string>
+    <string name="response_from_file_text">Response From File</string>
+
+    <string name="invalid_message_1">"INVALID - The command is shorter than min APDU length or its length is not even number"</string>
+    <string name="invalid_message_2">"INVALID - The response is not even number"</string>
+
+
+    <!--  Host Card Emulator Service Class -->
+    <string name="command_tag">SERVICE APDU-C</string>
+    <string name="response_tag">SERVICE APDU-R</string>
+    <string name="communication_tag">COMMUNICATION</string>
+
+    <string name="command_aborted_with_reason"><![CDATA[SW Command Aborted (6F00) Case —> Reason : The command is shorter than min APDU length or its length is not even number.]]></string>
+    <string name="null_command">Command APDU is NULL</string>
+    <string name="communication_started">Communication is Started…</string>
+    <string name="communication_ended">Communication is Ended.</string>
+
+    <string name="apdu_c">"C-APDU : "</string>
+    <string name="apdu_r">"R-APDU : "</string>
+
+    <!--  Information Transfer Manager Class -->
+    <string name="default_selected_file_text">No File Selected</string>
+    <string name="service_started">Started</string>
+    <string name="service_stopped">Stopped</string>
+
+    <string name="logs_title_for_all">*** ALL LOG MESSAGES ***</string>
+    <string name="logs_title_for_communication">*** COMMUNICATION LOG MESSAGES ***</string>
+    <string name="logs_no_communication">There is no Communication Log</string>
+
+    <!--  MainActivity Class  -->
+    <string name="start_service_tag">START SERVICE</string>
+    <string name="start_service_text">Host Card Emulator Service is activated.</string>
+
+    <string name="stop_service_tag">STOP SERVICE</string>
+    <string name="stop_service_text">Host Card Emulator Service is inactivated.</string>
+
+    <string name="help_tag">HELP</string>
+    <string name="help_text">Help requested.</string>
+
+    <string name="about_tag">ABOUT</string>
+    <string name="about_text">About requested.</string>
+
+    <string name="share_message_tag">Share Message</string>
+    <string name="share_message_text_1">Share message button used.</string>
+    <string name="share_message_text_2">Message successfully shared.</string>
+
+    <string name="navigate_up_tag">NAVIGATE UP</string>
+    <string name="on_key_down_tag">ON KEY DOWN</string>
+    <string name="move_back_text">The user returned back to the previous screen.</string>
+
+    <string name="hce_email_title">HCE Log Messages</string>
+
+    <string name="dialog_box_tag">DIALOG BOX</string>
+    <string name="dialog_box_title">Log Messages</string>
+    <string name="dialog_box_text">Do you want to clear all log messages now?</string>
+    <string name="dialog_box_message_1">All log messages are deleted.</string>
+    <string name="dialog_box_message_2">All log messages were kept intact.</string>
+    <string name="dialog_box_yes">Yes</string>
+    <string name="dialog_box_no">No</string>
+
+    <!--  MainScreenFragment Class  -->
+    <string name="manage_file_button_tag">MANAGE FILE BUTTON</string>
+    <string name="manage_file_button_text">Manage File Button clicked.</string>
+
+    <string name="snack_bar_message_1">Please select a file first.</string>
+
+    <string name="currently_service_title">Service Status</string>
+    <string name="selected_file_title">Selected File</string>
+
+    <string name="communication_title">Communication Logs</string>
+
+    <string name="service_inactive">Stopped</string>
+    <string name="service_active">Started</string>
+    <string name="menu_selected_file">No file selected</string>
+
+    <!--  ManageFileScreenFragment Class  -->
+    <string name="browse_tag">BROWSE BUTTON</string>
+    <string name="browse_text">Browse Button clicked.</string>
+
+    <string name="import_tag">IMPORT BUTTON</string>
+    <string name="import_text_1">The file is imported into application files as</string>
+    <string name="import_text_2">is imported.</string>
+
+    <string name="not_imported_missing_filename">Not imported… Please enter a filename.</string>
+    <string name="not_imported_extension_entered">Not imported… Please do not enter file extension.</string>
+    <string name="not_imported_missing_source_file">Not imported… Please choose a source file.</string>
+
+    <string name="select_file_tag">SELECT FILE</string>
+    <string name="delete_file_tag">DELETE FILE</string>
+
+    <string name="on_item_selected_tag">ON ITEM SELECTED</string>
+    <string name="on_item_selected_text">Spinner is pointing to the file that</string>
+
+    <string name="snack_bar_message_2">is selected.</string>
+    <string name="snack_bar_message_3">is in use -></string>
+    <string name="snack_bar_message_4">Command Number :</string>
+    <string name="snack_bar_message_5">Response Number :</string>
+    <string name="snack_bar_message_6">is deleted.</string>
+
+    <string name="snack_bar_no_file_to_select">No file to select.</string>
+    <string name="snack_bar_no_file_to_delete">No file to delete.</string>
+
+    <string name="notice_tag">NOTICE</string>
+    <string name="notice_text">The file in use has been deleted. Service will be inactivated…</string>
+
+    <string name="button_browse">Browse</string>
+    <string name="button_show_info">Show Info</string>
+    <string name="button_import">Import</string>
+
+    <string name="file_selection">FILE SELECTION</string>
+    <string name="add_new_file">ADD NEW FILE</string>
+
+    <string name="button_menu">Menu</string>
+    <string name="button_set_file">Use Selected File</string>
+    <string name="button_delete_file">Delete Selected File</string>
+
+    <string name="rename_file_title_text">File selected. Rename it (Optional).</string>
+    <string name="check_file_browse_selected_case">Source File Active</string>
+    <string name="check_file_browse_default">No Source File</string>
+
+    <!--  ResponseHandler Class  -->
+    <string name="ins_select_case">INS Select (A4) Case</string>
+    <string name="ins_read_binary">INS Read Binary (B0) Case</string>
+    <string name="ins_get_processing_option">INS Get Processing Option (A8) Case</string>
+    <string name="ins_read_record">INS Read Record (B2) Case</string>
+    <string name="ins_perform_security">INS Perform Security Operation (2A) Case</string>
+    <string name="ins_read_ndef">INS Read NDEF (C0) Case</string>
+    <string name="ins_write_binary">INS Write Binary (D0) Case</string>
+    <string name="ins_update_binary">INS Update Binary (D6) Case</string>
+    <string name="ins_generate_app_cryptogram">INS Get AC (AE) Case</string>
+    <string name="ins_get_data">INS Get Data (CA) Case</string>
+
+    <!--  Utils Class  -->
+    <string name="file_name_tag">FILE NAME :</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Host Based Card Emulator</string>
+    <string name="second_fragment_label">Manage File</string>
+    <string name="help_fragment_label">Help</string>
+    <string name="about_fragment_label">About</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--  Button Strings  -->
+    <string name="button_start_service">Start Service</string>
+    <string name="button_stop_service">Stop Service</string>
+    <string name="button_manage_file">Manage File</string>
+
+    <!--  AboutScreenFragment Class  -->
+    <string name="explanation"> <b>This is an opensource application. <i>Free to use.</i></b> </string>
+    <string name="developer"> <b>Developer : </b> Okan Atas </string>
+    <string name="email"> <b>Email : </b> okanatas.ca@gmail.com </string>
+    <string name="github"> <b>Github : </b> /okanatas </string>
+    <string name="source_code"> <b>Source Code : </b> /okanatas/NFCCardEmulator </string>
+    <string name="note"> <b>NOTE : </b>If you encounter any bugs, you can send me an e-mail to report it. Thank you for your interest.</string>
+
+    <string name="large_text">
+        <b><font fgcolor='#0070F5'>"*** HELP CONTENTS ***\n\n "</font></b>
+
+        "0. DISCLAIMER\n "
+        "1. What is NFC Card Emulator and what is it used for?\n "
+        "2. Screen and Buttons.\n "
+        "3. How does the application work?\n "
+        "4. How to import file(s)?\n "
+        "5. What format should the imported file be?\n "
+        "6. What should the content of the imported file be?\n "
+        "7. How to emulate the card with the imported file?\n "
+        "8. How to start the Host Based Card Emulation Service?\n "
+        "9. How to stop the Host Based Card Emulation Service?\n"
+        "10. Sending logs by email.\n"
+
+         <b><font fgcolor='#0070F5'> "\n\n0. DISCLAIMER"</font></b>
+
+        "\n\nThis application is not created for any purpose other than to control and regulate the communication"
+        "between the terminal and the emulated card by authorized programmers."
+        "\n\nNo liability will be accepted for any other use. "
+
+         <b><font fgcolor='#0070F5'> "\n\n1. WHAT IS NFC CARD EMULATOR AND WHAT IS IT USED FOR ?"</font></b>
+
+        <b><i>"\n\nNFC Card Emulator"</i></b>
+        "application is an application created for testing purposes and uses the Host-Based Card Emulation method."
+        "\n\nWith this application, it can be checked whether the system is working as desired by emulating a contactless card and"
+        "controlling the communication between the terminals."
+
+         <b><font fgcolor='#0070F5'> "\n\n2. SCREEN AND BUTTONS"</font></b>
+
+        "\n\nThis application consists of 4 different screens."
+        "\n\nThese are the main screen, the file management screen, the help screen, and the about screen."
+
+        <b>"\n\nThe Main Screen"</b>
+
+        "\n\nAt the top of the main screen is a description of the service status and the selected file. There are two buttons under these explanation texts."
+        "\n\nThe button on the left is the button that starts and stops the HCE service. If no file is selected, this button is grayed out."
+        "\n\nThe button on the right is the file management button. Using this button, you can import files and any of the imported files can be selected to be used in the HCE service."
+
+        <b>"\n\nThe File Management Screen"</b>
+
+        "\n\nThere are two main headings on the file management screen. These are: File Selection, Add new file."
+        "\n\nThere are two different buttons under the Add new file heading. These are: Browse and Import."
+        "\n\nThe Browse button starts an activity to select a file and the user can select a file with txt extension from any different path (Please see the 5th heading to find out what features the selected file should have)."
+        "\n\nImport button imports the file selected by the user into the application files. If there is no file selected, this button is grayed out."
+
+        <b>"\n\nThe Help Screen"</b>
+
+        "\n\nIt is the screen consisting of written information to inform the user about the application. You are on this screen right now."
+
+        <b>"\n\nThe About Screen"</b>
+
+        "\n\nThis is the screen that gives information about the developer and source code of the application."
+
+          <b><font fgcolor='#0070F5'>"\n\n3. HOW DOES THE APPLICATION WORK ?"</font></b>
+
+        "\n\nThe application expects the user to import a txt file in the appropriate format for apdu communication (see the titles 4, 5 and 6 for details)."
+        "\n\nAll imported txt files can be seen in the spinner under the "File Selection" title under the "Manage File" screen."
+        "\n\nThe user should select the desired txt file with the spinner and press the "Use Selected File" button. Thus the selected file will be used by the HCE service."
+        "\n\nAfter selecting the file, return to the main screen and click the "Start Service" button. The application now emulates the card specified with the txt file."
+        "\n\nWhen you bring your device closer to the target terminal (This distance should be maximum 4 cm.) The communication between the terminal and the card will appear on the main screen under "Communication Logs"."
+
+         <b><font fgcolor='#0070F5'> "\n\n4. HOW TO IMPORT FILE(s) ?"</font></b>
+
+        "\n\nThere is a "Manage File" button on the main screen of the application. This button navigates to the user file management screen."
+        "\n\nOn this screen, there are "Browse" and "Import" buttons under the "Add New File" heading."
+        "\n\nIn the first stage, the "Import" button is inactive and appears in gray. The user must first press the "Browse" button to select a file."
+        "\n\nAfter the file selection is complete, the "Import" button becomes active and turns blue. If the "Import" button is clicked, the file will be imported."
+
+          <b><font fgcolor='#0070F5'>"\n\n5. WHAT FORMAT SHOULD THE IMPORTED FILE BE ?"</font></b>
+
+        "\n\nBy default, the application only allows txt format to be browsed. Thus, all the imported files will be in txt format."
+
+          <b><font fgcolor='#0070F5'>"\n\n6. WHAT SHOULD THE CONTENT OF THE IMPORTED FILE BE ?"</font></b>
+
+        "\n\nThe files must contain an equal number of command APDUs and response APDUs."
+        "\n\nCommand APDU should be in the first line and response APDU should be in the other line. Thus, the Application can know which response will be given for which command."
+        "\n\nC-APDU keywords are used for command APDU and "R-APDU" keywords are used for response APDU."
+        <b>"\n\nPlease review the example below."</b>
+
+        "\n\n\t\tC-APDU:00A4001234567\n"
+        "\t\tR-APDU:9000\n"
+        "\t\t…\n"
+        "\t\tC-APDU:00B200987654321\n"
+        "\t\tR-APDU:6A82\n"
+
+          <b><font fgcolor='#0070F5'>"\n\n7. HOW TO EMULATE THE CARD WITH THE IMPORTED FILE ?"</font></b>
+
+        "\n\nOn the Manage File screen, there is the title "File Selection". Under this heading, there is a spinner for imported files."
+        "\n\nThe user selects the desired file with the spinner and presses the "Use Selected File" button. Thus, the file is made available for"
+        "use by the HCE service. Whenever the user presses the "Start Service" button on the main screen, the service will run with the selected file."
+
+        <b>"\n\nNOTE:"</b>
+        "A new file can be selected while the service is active."
+
+          <b><font fgcolor='#0070F5'>"\n\n8. HOW TO START THE HOST BASED CARD EMULATION SERVICE ?"</font></b>
+
+        "\n\nFor this process, there is a special button called "Start Service" on the main screen. This button is initially grayed out"
+        "because no file has been selected yet. After selecting File, this button becomes active and turns blue."
+        "\n\nThe service becomes active when the user presses the button."
+
+          <b><font fgcolor='#0070F5'>"\n\n9. HOW TO STOP THE HOST BASED CARD EMULATION SERVICE ?"</font></b>
+
+        "\n\nBy default, the service is not started. That's why the "Start Service" button appears on the main screen. If the user has started"
+        "the service, the same button will appear in a different form as "Stop Service". It is enough to press this button to stop the service."
+        "\n\nIn other words, the same button is used to start the service when the service is stopped and to stop the service when it is started."
+
+          <b><font fgcolor='#0070F5'>"\n\n10. SENDING LOGS BY EMAIL"</font></b>
+
+        "\n\nThe application follows the steps of the user, important events and records them as log messages."
+
+        "\n\nThese log messages can be shared with the circular email button located in the lower right corner of the application"
+        "and visible on each different screen."
+        "After sharing, the user can preferably clear the log messages with the pop-up dialog box."
+
+       "\n\n"
+    </string>
+
+</resources>

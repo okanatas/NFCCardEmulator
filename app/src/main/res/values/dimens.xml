@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="communication_log_text_size">14sp</dimen>
+</resources>

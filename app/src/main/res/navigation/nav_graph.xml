@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MainScreenFragment">
+
+    <fragment
+        android:id="@+id/MainScreenFragment"
+        android:name="com.okanatas.nfccardemulator.MainScreenFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_main_screen">
+
+        <action
+            android:id="@+id/action_MainScreenFragment_to_ManageFileScreenFragment"
+            app:destination="@id/ManageFileScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ManageFileScreenFragment"
+        android:name="com.okanatas.nfccardemulator.ManageFileScreenFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_manage_file_screen">
+
+        <action
+            android:id="@+id/action_ManageFileScreenFragment_to_MainScreenFragment"
+            app:destination="@id/MainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HelpScreenFragment"
+        android:name="com.okanatas.nfccardemulator.HelpScreenFragment"
+        android:label="@string/help_fragment_label"
+        tools:layout="@layout/fragment_help_screen">
+
+        <action
+            android:id="@+id/action_HelpScreenFragment_to_MainScreenFragment"
+            app:destination="@id/MainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AboutScreenFragment"
+        android:name="com.okanatas.nfccardemulator.AboutScreenFragment"
+        android:label="@string/about_fragment_label"
+        tools:layout="@layout/fragment_about_screen">
+
+        <action
+            android:id="@+id/action_AboutScreenFragment_to_MainScreenFragment"
+            app:destination="@id/MainScreenFragment" />
+    </fragment>
+</navigation>

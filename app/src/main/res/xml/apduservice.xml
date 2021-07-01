@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/service_description"
+    android:requireDeviceUnlock="false">
+    <aid-group android:description="@string/aid_description"
+        android:category="other">
+        <aid-filter android:name="315041592E5359532E4444463031"/> <!-- Visa International (US) -->
+        <aid-filter android:name="325041592E5359532E4444463031"/> <!-- Visa International (US) -->
+        <aid-filter android:name="44464D46412E44466172653234313031"/> <!-- DeviceFidelity (US) -->
+
+        <aid-filter android:name="4F53452E5641532E3031"/> <!-- Google Pay -->
+
+        <aid-filter android:name="A000000333010101" /> <!-- union pay debit -->
+        <aid-filter android:name="A000000333010102" /> <!-- union pay credit -->
+        <aid-filter android:name="A000000333010103" /> <!-- union pay quasi-credit -->
+        <aid-filter android:name="A000000333010106" /> <!-- union pay electronic cash -->
+
+        <aid-filter android:name="A0000000031010" /> <!-- visa credit or debit -->
+        <aid-filter android:name="A0000000032010" /> <!-- visa electron -->
+        <aid-filter android:name="A0000000032020" /> <!-- visa pay -->
+        <aid-filter android:name="A0000000038010" /> <!-- visa plus -->
+
+        <aid-filter android:name="A0000000041010" /> <!-- mastercard credit or debit -->
+        <aid-filter android:name="A0000000049999" /> <!-- mastercard paypass -->
+        <aid-filter android:name="A0000000043060" /> <!-- mastercard maestro debit -->
+        <aid-filter android:name="A0000000046000" /> <!-- mastercard cirrus atm card -->
+        <aid-filter android:name="A0000000050001" /> <!-- mastercard maestro uk -->
+
+    </aid-group>
+</host-apdu-service>
