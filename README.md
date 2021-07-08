@@ -1,4 +1,4 @@
-# NFCCardEmulator
+# NFC Card Emulator
 Host-Based Card Emulator App
 
 
