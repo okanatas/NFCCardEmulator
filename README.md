@@ -11,7 +11,7 @@ reader can be observed to check whether the system works as desired.
 Google Play : https://play.google.com/store/apps/details?id=com.okanatas.nfccardemulator
 
 
-SAMPLE TXT FILES:
+SAMPLE APDU TXT FILES:
 
 Visa        : https://bit.ly/visa_transaction
 
