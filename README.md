@@ -14,4 +14,5 @@ Google Play : https://play.google.com/store/apps/details?id=com.okanatas.nfccard
 SAMPLE TXT FILES:
 
 Visa        : https://bit.ly/visa_transaction
+
 MasterCard  : https://bit.ly/mastercard_transaction
