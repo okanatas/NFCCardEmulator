@@ -8,11 +8,11 @@ and the smart card. It uses the Host-Based Card Emulation method in the testing 
 With this application, a smart card can be emulated and the communication between this emulated card and the smart card
 reader can be observed to check whether the system works as desired.
 
-Google Play : https://play.google.com/store/apps/details?id=com.okanatas.nfccardemulator
+[Google Play](https://play.google.com/store/apps/details?id=com.okanatas.nfccardemulator)
 
 
-SAMPLE APDU TXT FILES:
+## Sample txt files
 
-Visa        : https://bit.ly/visa_transaction
+[Visa Transaction Sample Case](https://gist.github.com/okanatas/302b6c4f8212c4d6958f368e89d57915)
 
-MasterCard  : https://bit.ly/mastercard_transaction
+[Mastercard Transaction Sample Case](https://gist.github.com/okanatas/cd2634aff6071dedd3d463e5c5e568e8)
