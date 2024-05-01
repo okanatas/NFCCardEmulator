@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.okanatas.nfccardemulator">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--  declaration to use NFC  -->
     <uses-permission android:name="android.permission.NFC" />
@@ -8,10 +7,11 @@
     <!--  access to write external storage   -->
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28"/>
+        android:maxSdkVersion="28" />
 
     <!--  Requirement for the HCE hardware, the app only installs on phones that can run the HCE  -->
-    <uses-feature android:name="android.hardware.nfc.hce"
+    <uses-feature
+        android:name="android.hardware.nfc.hce"
         android:required="true" />
 
     <application
@@ -23,6 +23,7 @@
         android:theme="@style/Theme.NFCCardEmulator">
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.NFCCardEmulator.NoActionBar">
             <intent-filter>

@@ -160,12 +160,13 @@
     <string name="button_manage_file">Manage File</string>
 
     <!--  AboutScreenFragment Class  -->
-    <string name="explanation"> <b>This is an opensource application. <i>Free to use.</i></b> </string>
-    <string name="developer"> <b>Developer : </b> Okan Atas </string>
-    <string name="email"> <b>Email : </b> okanatas.ca@gmail.com </string>
-    <string name="github"> <b>Github : </b> /okanatas </string>
-    <string name="source_code"> <b>Source Code : </b> /okanatas/NFCCardEmulator </string>
-    <string name="note"> <b>NOTE : </b>If you encounter any bugs, you can send me an e-mail to report it. Thank you for your interest.</string>
+    <string name="explanation">This is an Open Source application. <i>Free to use.</i></string>
+    <string name="developer_title">Developer</string>
+    <string name="developer_name">Okan Atas</string>
+    <string name="contact_title">Contact</string>
+    <string name="contact_link">https://www.okanatas.com/contact</string>
+    <string name="source_code_title">Source Code</string>
+    <string name="source_code_link">https://github.com/okanatas/NFCCardEmulator</string>
 
     <string name="large_text">
         <b><font fgcolor='#0070F5'>"*** HELP CONTENTS ***\n\n "</font></b>
