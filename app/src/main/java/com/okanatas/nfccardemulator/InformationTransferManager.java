@@ -37,7 +37,7 @@ public class InformationTransferManager {
      * @return selected file name.
      */
     public static String getSelectedFileText(){
-        return selectedFileText.equals("") ? getStringResource(R.string.default_selected_file_text) : selectedFileText;
+        return selectedFileText.isEmpty() ? getStringResource(R.string.default_selected_file_text) : selectedFileText;
     }
 
     /**
@@ -169,7 +169,7 @@ public class InformationTransferManager {
         return getStringResource(R.string.logs_title_for_all) + "\n\n"
                 + allLogMessages.toString()
                 + "\n" + getStringResource(R.string.logs_title_for_communication) + "\n\n"
-                + (communicationLogMessages.toString().equals("") ? getStringResource(R.string.logs_no_communication) : communicationLogMessages.toString());
+                + (communicationLogMessages.toString().isEmpty() ? getStringResource(R.string.logs_no_communication) : communicationLogMessages.toString());
     }
 
     /**
